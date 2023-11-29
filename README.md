@@ -10,7 +10,7 @@ La fonction `get_next_line` permet de lire une ligne (jusqu'à un caractère de 
 
 1. Clonez ce référentiel sur votre machine locale.
 	```bash
-	https://github.com/Lilien86/42-get_next_line.git
+	git clone https://github.com/Lilien86/42-get_next_line.git
 	```
 2. Compilez le programme avec les fichiers source de la fonction (et vortre propre main.c)
 	```bash
