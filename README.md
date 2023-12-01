@@ -1,29 +1,31 @@
 # get_next_line
 
-Ce projet consiste en l'implémentation de la fonction `get_next_line`, une fonction qui lit une ligne d'un fichier descripteur de fichier ou d'un flux d'entrée standard.
+This project involves the implementation of the get_next_line function, a function that reads a line from a file descriptor or standard input stream.
 
-## Fonctionnement
+## Features
 
-La fonction `get_next_line` permet de lire une ligne (jusqu'à un caractère de nouvelle ligne) à partir d'un fichier descripteur de fichier (file descriptor) et de stocker cette ligne dans une chaîne de caractères allouée dynamiquement. À chaque appel de la fonction, la ligne suivante du fichier est lue jusqu'à ce qu'une nouvelle ligne soit trouvée ou que la fin du fichier soit atteinte.
+The get_next_line function reads a line (up to a newline character) from a file descriptor and stores this line in a dynamically allocated character string. With each function call, the next line of the file is read until a newline is found or the end of the file is reached.
+
+
 
 ## Instalation
 
-1. Clonez ce référentiel sur votre machine locale.
+1. Clone this repository to your local machine.
 	```bash
 	git clone https://github.com/Lilien86/42-get_next_line.git
 	```
-2. Compilez le programme avec les fichiers source de la fonction (et vortre propre main.c)
+2. Compile the program with the source files of the function (and your own main.c).
 	```bash
 	cc get_next_line.c get_next_line.h get_next_line_utils.c main.c
 	```
-## Utilisation
+## Usage
 
-1. Incluez le fichier d'en-tête get_next_line.h et fcntl.h
+1. Include the header file get_next_line.h and fcntl.h.
 	```c
 	#include "get_next_line.h"
 	#include "<fcntl.h>"
 	```
-2. Utilisez la fonction get_next_line
+2. Use the get_next_line function.
 	```c
 	int main() {
     int fd = open("exemple.txt", O_RDONLY);
